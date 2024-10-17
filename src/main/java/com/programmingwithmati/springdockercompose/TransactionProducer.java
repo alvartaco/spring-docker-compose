@@ -27,7 +27,7 @@ public class TransactionProducer {
 
     public static void main(String[] args) {
         try (KafkaProducer<String, String> transactionProducer = new KafkaProducer<>(Map.of(
-                ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092",
+                ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9094",
                 ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class,
                 ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class
         ))) {
